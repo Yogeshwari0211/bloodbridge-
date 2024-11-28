@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BloodBridge</h1>
+    </header>
+    <main>
+        <section id="register-donor">
+            <h2>Register as a Donor</h2>
+            <form id="donor-form">
+                <input type="text" id="donor-name" placeholder="Name" required>
+                <input type="text" id="donor-blood-group" placeholder="Blood Group" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="request-blood">
+            <h2>Request Blood</h2>
+            <form id="blood-request-form">
+                <input type="text" id="request-name" placeholder="Your Name" required>
+                <input type="text" id="request-blood-group" placeholder="Required Blood Group" required>
+                <button type="submit">Request</button>
+            </form>
+        </section>
+
+        <section id="search-donors">
+            <h2>Search for Donors</h2>
+            <input type="text" id="search-blood-group" placeholder="Enter Blood Group">
+            <button id="search-btn">Search</button>
+            <ul id="donors-list"></ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
